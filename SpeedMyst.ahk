@@ -21,12 +21,16 @@ click,down
 click, up 
 ;sleep downsleep
 }
+^w::
+Send, {escape}
+nclk( 1650, 840) ;newgame
+nclk( 900, 600) ;newgame
+return
 
 
 ^e::
-nclk(100, 100 ) ;cyan
-sleep loopsleep
-nclk( 1650, 840) ;newgame
+
+nclk( 1650, 840) ;introskip
 sleep loopsleep
 nclk(1200, 350) ;book
 sleep 9000
@@ -209,8 +213,4 @@ nclk( 990, 470 ) ;Give Page PLZ
 Return
 ^r::
 reload
-return
-^w::
-
-
 return
